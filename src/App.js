@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import './style.css';
+import { Container, H1, Image, ContainerItens, Button, Input, InputLabel } from "./styles";
+import Nachi from './assets/Nachi-rolam-6303-removebg-preview.png'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () =>{
+  return <Container>
+    <Image alt="rolamento-nachi" src={Nachi} />
+
+    <ContainerItens>
+    <H1> Faça seu Pedido! </H1>
+    <InputLabel>Digite o tipo de Rolamento:</InputLabel>
+    <Input placeholder='6004 2nsec, 6001 c3, 6205c3....' />
+    <InputLabel>Digite a quantidade:</InputLabel>
+    <Input placeholder='Quantidade em números' />
+
+<Button>Cadastrar o pedido</Button>
+
+    </ContainerItens>
+
+    </Container>
 }
 
 export default App;
