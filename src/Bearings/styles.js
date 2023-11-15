@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import Background from './assets/background-vertical.png'
+import Background from '../assets/background-vertical.png'
+import { Link } from 'react-router-dom'
 
 export const Container = styled.div`
 background: url('${Background}') no-repeat center center fixed;
@@ -53,7 +54,7 @@ border: none;
 outline: none;
 `
 
-export const Button = styled.button`
+export const Button = styled(Link)`
 background-color: #E31825;
 color: #000;
 border-radius: 15px;
@@ -66,6 +67,7 @@ align-items: center;
 justify-content: center;
 
 margin-bottom: 20px;
+margin-top: 20px;
 
 &:hover{
     opacity: 0.8;
@@ -76,5 +78,50 @@ margin-bottom: 20px;
 }
 `
 
+export const Footer = styled.footer`
+background-color: #6f85fd;
+color: #fff;
+width: 100%;
+height: 70px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-style: oblique;
+
+position: fixed;
+bottom: 0;
+margin-top: 1px;
+`
+export const Bearing = styled.li`
+display: flex;
+justify-content: space-around;
+align-items: center;
+background: rgba(255, 255, 255, 0.25);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 14px;
+width: 342px;
+height: 58px;
+border: none;
+outline: none;
+
+margin-top: 20px;
+
+p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #ffffff;
+}
+
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+   
+}
+
+
+`
 
 
