@@ -15,6 +15,10 @@ display: flex;
 export const Image = styled.img`
 width: 600px;
 z-index: 5;
+
+@media (max-width: 768px) {
+    width: 450px;
+}
 `
 
 export const ContainerItens = styled.div`
