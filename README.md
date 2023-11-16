@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+## :file_folder: Projeto Rolamentos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p> 🖥️✨Estou muito empolgado em compartilhar o resultado final desta jornada incrível! O usuário ficou extremamente satisfeito com a aplicação, e isso é o que mais me motiva: criar soluções que realmente atendam às necessidades e facilitem o dia a dia das pessoas.✨🖥️<br>
+<br>
+Recentemente, tive o prazer de realizar um projeto que não trouxe apenas aprendizado, mas também satisfação ao usuário final. Desenvolvi uma web utilizando <strong>React</strong>, com a praticidade dos <strong>hooks</strong> e a biblioteca <strong>React Router Dom</strong>, aliado ao poderoso <strong>Axios</strong> para comunicação com o backend. Falando nele, a API foi construída por mim, com <strong>Node.js</strong>, <strong>Express</strong> e o dinamismo do <strong>Nodemon</strong> para agilizar o processo de desenvolvimento.<br>
+<br>
+Partindo de um protótipo cuidadosamente desenhado no <strong>Figma</strong>, planejei essa jornada de criação, centrando-me na experiência diária do vendedor externo que necessitava de uma página acessível para realizar pedidos, substituindo o caderno tradicional. Afinal, a correria do cotidiano requer soluções ágeis, então focamos na adaptação da aplicação para dispositivos móveis, tornando-a prática e responsiva. A cereja do bolo foi a implementação de estilos com o poderoso <strong>Styled Components</strong>, garantindo uma apresentação elegante e moderna.<br>
+<br>
+Após disponibilizar a aplicação para testes, o usuário desejou algumas adições para tornar a experiência ainda mais completa, além das previstas no desenho do Figma. <br>
+<br>
+Para elevar ainda mais o projeto, aprendi e apliquei a <strong>publicação da API no Vercel</strong>, ampliando meus conhecimentos e garantindo uma experiência mais fluida para os usuários finais.</p>
 
-## Available Scripts
+## :computer: Tecnologias utilizadas:
 
-In the project directory, you can run:
+- React
+- React Router Dom
+- Styled Components
+- Axios
+- Figma
 
-### `npm start`
+- Node.js
+- Express
+- Nodemon
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## :rocket: Visite o site (projeto publicado):
+:fast_forward: <br>
+🔗Link do Figma: <a href="https://www.figma.com/file/MR7UL1tJslImeBFGAcEBdG/Pedido-Rolamento?type=design&node-id=0-1&mode=design&t=GjaXqiBJZSoXrRTW-0"> Figma</a> <br>
+🔗Link do site: <a href="https://rolamentos-flavia-ramos.netlify.app/"> Site Rolamentos</a> <br>
+🔗Link da API: <a href="https://bearing-backend-flavia-ramos-projects.vercel.app/bearings"> Link da API</a> <br>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## :flower_playing_cards: Imagem do Projeto:
 
-### `npm run build`
+<img src="https://github.com/FlaviaRamosdaSilva/Desafio-React-Rolamentos/blob/master/src/assets/API%20funcionando%20(back%20e%20front).png">
+https://github.com/FlaviaRamosdaSilva/Desafio-React-Rolamentos/assets/134753852/ed171387-009f-4b3f-ace7-9eb1ccd7bc21
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
