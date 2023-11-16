@@ -6,7 +6,7 @@ import { useHistory } from "react-router-dom";
 import Trash from '../assets/lixeira.svg'
 import Orders from '../assets/varias-caixas-png-removebg-preview.png'
 
-import { Container, H1, Image, ContainerItens, Button, Footer, Bearing } from "./styles";
+import { Container, H1, Image, ContainerItens, Button, Footer, Bearing, InputLabel } from "./styles";
 
 
 function Bearings() {
@@ -49,7 +49,7 @@ function goBackPage() {
       <ul>
         {bearings.map((bearing) => (
           <Bearing key={bearing.id}>
-            <p>{bearing.name}</p> <p>{bearing.number}</p>
+            <InputLabel>{bearing.name}</InputLabel> <InputLabel>{bearing.number}</InputLabel><InputLabel>{bearing.price}</InputLabel>
             <button onClick={() => deleteBearing(bearing.id)}><img src={Trash} alt='lata-de-lixo' /></button>
           </Bearing>))}
       </ul>

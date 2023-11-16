@@ -12,6 +12,7 @@ function App() {
   const [bearing, setBearings] = useState([]);
   const inputName = useRef();
   const inputNumber = useRef();
+  const inputPrice = useRef();
 
   const history = useHistory();
 
@@ -20,12 +21,15 @@ function App() {
   async function addNewBearing() {
     const { data: newBearing } = await axios.post(`${baseUrl}/bearings`, {
       name: inputName.current.value,
-      number: inputNumber.current.value
+      number: inputNumber.current.value,
+      price: inputPrice.current.value
     });
 
     setBearings([...bearing, newBearing]);
 
     history.push("/bearings");
+
+    console.log(inputPrice)
   }
 
   return <Container>
@@ -37,6 +41,8 @@ function App() {
     <Input ref={inputName} placeholder='6004 2nsec, 6001 c3, 6205c3....' />
     <InputLabel>Digite a quantidade:</InputLabel>
     <Input ref={inputNumber} placeholder='Quantidade em números' />
+    <InputLabel>Valor:</InputLabel>
+    <Input ref={inputPrice} placeholder='apenas números' />
 
 <Button onClick={addNewBearing}>Cadastrar o pedido</Button>
 

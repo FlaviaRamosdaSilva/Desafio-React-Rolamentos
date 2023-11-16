@@ -46,7 +46,7 @@ z-index: 4;
 export const Input = styled.input`
 background-color: #D9D9D9;
 border-radius: 30px;
-height: 55px;
+height: 110px;
 width: 350px;
 padding-left: 10px;
 font-size: 20px;
