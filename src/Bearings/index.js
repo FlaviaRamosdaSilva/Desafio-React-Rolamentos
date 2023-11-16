@@ -1,17 +1,23 @@
 import React from "react";
-import Trash from '../assets/lixeira.svg'
-import { Container, H1, Image, ContainerItens, Button, Footer, Bearing } from "./styles";
-import Orders from '../assets/varias-caixas-png-removebg-preview.png'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import { useHistory } from "react-router-dom";
+
+import Trash from '../assets/lixeira.svg'
+import Orders from '../assets/varias-caixas-png-removebg-preview.png'
+
+import { Container, H1, Image, ContainerItens, Button, Footer, Bearing } from "./styles";
+
 
 function Bearings() {
   const [bearings, setBearings] = useState([]);
+  const history = useHistory()
+  const baseUrl = "https://bearing-backend-flavia-ramos-projects.vercel.app"
 
   useEffect(() => {
 
     async function fetchBearings() {
-      const { data: newBearing } = await axios.get("http://localhost:3002/bearings")
+      const { data: newBearing } = await axios.get(`${baseUrl}/bearings`)
       setBearings(newBearing);
     }
     fetchBearings()
@@ -20,12 +26,16 @@ function Bearings() {
 
 
   async function deleteBearing(bearingId) {
-    await axios.delete(`http://localhost:3002/bearings/${bearingId}`)
+    await axios.delete(`${baseUrl}/bearings/${bearingId}`)
 
     const newBearings = bearings.filter(bearing => bearing.id !== bearingId);  // estamos criando um novo array utilizando o array atual e
     // filtrando, onde a gente só deixa no array os usuários que tiverem um ID diferente do que foi selecionado.
     setBearings(newBearings);
   };
+
+function goBackPage() {
+  history.push("/")
+}
 
 
   return <Container>
@@ -44,7 +54,7 @@ function Bearings() {
           </Bearing>))}
       </ul>
 
-      <Button to="/">Voltar</Button>
+      <Button onClick={goBackPage} >Voltar</Button>
 
     </ContainerItens>
 

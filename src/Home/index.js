@@ -1,22 +1,31 @@
 import React from "react";
-
-import { Container, H1, Image, ContainerItens, Button, Input, InputLabel, Footer} from "./styles";
-import Nachi from '../assets/Nachi-rolam-6303-removebg-preview.png'
 import { useState, useRef } from 'react'
 import axios from 'axios'
+import { useHistory } from "react-router-dom";
+
+import { Container, H1, Image, ContainerItens, Button, Input, InputLabel, Footer} from "./styles";
+
+import Nachi from '../assets/Nachi-rolam-6303-removebg-preview.png'
+
 
 function App() {
   const [bearing, setBearings] = useState([]);
   const inputName = useRef();
   const inputNumber = useRef();
 
+  const history = useHistory();
+
+  const baseUrl = "https://bearing-backend-flavia-ramos-projects.vercel.app"
+
   async function addNewBearing() {
-    const { data: newBearing } = await axios.post("http://localhost:3002/bearings", {
+    const { data: newBearing } = await axios.post(`${baseUrl}/bearings`, {
       name: inputName.current.value,
       number: inputNumber.current.value
     });
 
     setBearings([...bearing, newBearing]);
+
+    history.push("/bearings");
   }
 
   return <Container>
@@ -29,7 +38,7 @@ function App() {
     <InputLabel>Digite a quantidade:</InputLabel>
     <Input ref={inputNumber} placeholder='Quantidade em números' />
 
-<Button to="/bearings" onClick={addNewBearing}>Cadastrar o pedido</Button>
+<Button onClick={addNewBearing}>Cadastrar o pedido</Button>
 
     </ContainerItens>
 

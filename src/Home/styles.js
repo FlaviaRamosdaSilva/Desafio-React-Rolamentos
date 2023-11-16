@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Background from '../assets/background-vertical.png'
-import { Link } from 'react-router-dom'
+
 
 export const Container = styled.div`
 background: url('${Background}') no-repeat center center fixed;
@@ -54,7 +54,7 @@ border: none;
 outline: none;
 `
 
-export const Button = styled(Link)`
+export const Button = styled.button`
 background-color: #E31825;
 color: #000;
 border-radius: 15px;
