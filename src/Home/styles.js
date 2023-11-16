@@ -53,6 +53,20 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border: none;
 outline: none;
 `
+export const Select = styled.select`
+background-color: #D9D9D9;
+border-radius: 30px;
+height: 55px;
+width: 350px;
+padding-left: 10px;
+font-size: 20px;
+margin-bottom: 30px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+border: none;
+outline: none;
+`
+
 
 export const Button = styled.button`
 background-color: #E31825;

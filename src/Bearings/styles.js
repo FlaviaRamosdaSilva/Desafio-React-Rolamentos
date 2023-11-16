@@ -35,6 +35,7 @@ align-items: center;
 justify-content: center;
 margin-bottom: 25px;
 z-index: 1;
+text-decoration: underline;
 `
 export const InputLabel = styled.p`
 color: #333C67;
@@ -101,10 +102,10 @@ export const Bearing = styled.li`
 display: flex;
 justify-content: space-around;
 align-items: center;
-background: rgba(255, 255, 255, 0.25);
+background: rgba(255, 255, 255, 0.35);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 14px;
-width: 342px;
+width: 415px;
 height: 58px;
 border: none;
 outline: none;
@@ -116,7 +117,7 @@ p{
     font-weight: normal;
     font-size: 20px;
     line-height: 28px;
-    color: #ffffff;
+    color: #E31825;
 }
 
 button{
@@ -125,8 +126,18 @@ button{
     cursor: pointer;
    
 }
-
-
 `
+
+export const Cabecalho = styled.ul`
+display: flex;
+justify-content: space-around;
+width: 415px;
+color: #333C67;
+font-weight: bold;
+font-size: 20px;
+margin-top: 10px;
+`
+
+
 
 

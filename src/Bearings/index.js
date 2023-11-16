@@ -6,7 +6,7 @@ import { useHistory } from "react-router-dom";
 import Trash from '../assets/lixeira.svg'
 import Orders from '../assets/varias-caixas-png-removebg-preview.png'
 
-import { Container, H1, Image, ContainerItens, Button, Footer, Bearing, InputLabel } from "./styles";
+import { Container, H1, Image, ContainerItens, Button, Footer, Bearing, InputLabel, Cabecalho } from "./styles";
 
 
 function Bearings() {
@@ -45,6 +45,13 @@ function goBackPage() {
     <ContainerItens>
 
       <H1>Lista do Pedido</H1>
+
+      <Cabecalho>
+        <p>Rolamento</p>
+        <p>Qtde</p>
+        <p>Valor unit.</p>
+        <p>Excluir</p>
+      </Cabecalho>
 
       <ul>
         {bearings.map((bearing) => (
