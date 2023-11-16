@@ -5,7 +5,6 @@ import Background from '../assets/background-vertical.png'
 export const Container = styled.div`
 background: url('${Background}') no-repeat center center fixed;
 background-size: cover;
-height: 100vh;
 width: 100vw;
 display: flex;
     flex-direction: column;
@@ -15,6 +14,7 @@ display: flex;
 
 export const Image = styled.img`
 width: 600px;
+z-index: 5;
 `
 
 export const ContainerItens = styled.div`
@@ -23,6 +23,7 @@ display: flex;
     flex-direction: column;
     align-items: left;
     padding-bottom: 70px;
+    z-index: 6;
 
 `
 
@@ -33,12 +34,13 @@ display: flex;
 align-items: center;
 justify-content: center;
 margin-bottom: 25px;
+z-index: 1;
 `
 export const InputLabel = styled.p`
 color: #333C67;
 font-size: 20px;
 height: 40px;
-
+z-index: 4;
 `
 
 export const Input = styled.input`
@@ -50,7 +52,7 @@ padding-left: 10px;
 font-size: 20px;
 margin-bottom: 30px;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+z-index: 3;
 border: none;
 outline: none;
 `
@@ -69,6 +71,8 @@ justify-content: center;
 
 margin-bottom: 20px;
 margin-top: 20px;
+
+z-index: 2;
 
 &:hover{
     opacity: 0.8;
@@ -89,7 +93,7 @@ align-items: center;
 justify-content: center;
 font-style: oblique;
 
-position: relative;
+position: sticky;
 bottom: 0;
 margin-top: 1px;
 `

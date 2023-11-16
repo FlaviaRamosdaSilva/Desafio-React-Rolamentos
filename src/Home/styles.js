@@ -5,7 +5,6 @@ import Background from '../assets/background-vertical.png'
 export const Container = styled.div`
 background: url('${Background}') no-repeat center center fixed;
 background-size: cover;
-height: 100vh;
 width: 100vw;
 display: flex;
     flex-direction: column;
@@ -88,9 +87,8 @@ align-items: center;
 justify-content: center;
 font-style: oblique;
 
-position: fixed;
+position: sticky;
 bottom: 0;
-margin-top: 1px;
 `
 
 
