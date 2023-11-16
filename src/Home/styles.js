@@ -14,7 +14,7 @@ display: flex;
 `
 
 export const Image = styled.img`
-height: 450px;
+width: 600px;
 `
 
 export const ContainerItens = styled.div`
@@ -22,6 +22,7 @@ export const ContainerItens = styled.div`
 display: flex;
     flex-direction: column;
     align-items: left;
+    padding-bottom: 70px;
 
 
 `

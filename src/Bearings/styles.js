@@ -14,7 +14,7 @@ display: flex;
 `
 
 export const Image = styled.img`
-height: 450px;
+width: 600px;
 `
 
 export const ContainerItens = styled.div`
@@ -22,7 +22,7 @@ export const ContainerItens = styled.div`
 display: flex;
     flex-direction: column;
     align-items: left;
-
+    padding-bottom: 70px;
 
 `
 
@@ -31,6 +31,7 @@ color: #333C67;
 font-size: 40px;
 display: flex;
 align-items: center;
+justify-content: center;
 margin-bottom: 25px;
 `
 export const InputLabel = styled.p`
@@ -88,7 +89,7 @@ align-items: center;
 justify-content: center;
 font-style: oblique;
 
-position: fixed;
+position: relative;
 bottom: 0;
 margin-top: 1px;
 `
